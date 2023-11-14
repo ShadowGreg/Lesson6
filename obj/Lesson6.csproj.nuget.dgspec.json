@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NIKnak\\Desktop\\C# start\\Lesson6\\Lesson6.csproj": {}
+    "C:\\Users\\shado\\OneDrive\\Desktop\\GB\\Разработка приложения на C#\\006\\Seminar\\CSharp-course-Lesson-and-DZ-6\\Lesson6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NIKnak\\Desktop\\C# start\\Lesson6\\Lesson6.csproj": {
+    "C:\\Users\\shado\\OneDrive\\Desktop\\GB\\Разработка приложения на C#\\006\\Seminar\\CSharp-course-Lesson-and-DZ-6\\Lesson6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NIKnak\\Desktop\\C# start\\Lesson6\\Lesson6.csproj",
+        "projectUniqueName": "C:\\Users\\shado\\OneDrive\\Desktop\\GB\\Разработка приложения на C#\\006\\Seminar\\CSharp-course-Lesson-and-DZ-6\\Lesson6.csproj",
         "projectName": "Lesson6",
-        "projectPath": "C:\\Users\\NIKnak\\Desktop\\C# start\\Lesson6\\Lesson6.csproj",
-        "packagesPath": "C:\\Users\\NIKnak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NIKnak\\Desktop\\C# start\\Lesson6\\obj\\",
+        "projectPath": "C:\\Users\\shado\\OneDrive\\Desktop\\GB\\Разработка приложения на C#\\006\\Seminar\\CSharp-course-Lesson-and-DZ-6\\Lesson6.csproj",
+        "packagesPath": "C:\\Users\\shado\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shado\\OneDrive\\Desktop\\GB\\Разработка приложения на C#\\006\\Seminar\\CSharp-course-Lesson-and-DZ-6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\DevExpress 22.1\\Components\\Offline Packages",
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\NIKnak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shado\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,6 +29,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\shado\\Downloads": {},
+          "D:\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.310\\RuntimeIdentifierGraph.json"
         }
       }
     }

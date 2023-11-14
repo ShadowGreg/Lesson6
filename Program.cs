@@ -1,65 +1,79 @@
 ﻿namespace Lesson6
 {
-    internal class Program
-    {
+    internal class Program {
+        private static double _number;
+        public static double Num { get; set; } = 0;
+
         static void Main(string[] args)
         {
-            //lesson1
-            /*
-            if (MyTryParse("4", out int num))
+            try
             {
-                Console.WriteLine(num);
+                List<string> list = new List<string>() {
+                    "1,5",
+                    "2,1",
+                    "-3",
+                    "FGSDGF",
+                    "5.6",
+                    "6,9999999",
+                }; 
+                _number = Num;
+                var flag = DoubleTryParse("4.5", out _number);
+                Console.WriteLine(flag);
+                Console.WriteLine(Num);
+                
+                double[] parsedNumbers = list.Select(
+                    num => DoubleParse(
+                        num.ToString(),
+                        out double result) ? result : 0)
+                    .ToArray();
+                
+                
             }
-            */
-            //lesson2
+            catch (FormatException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             
             try
             {
-                ProcessNumber(-5);
+                double result = CalculateSum(5, 3);
+                Console.WriteLine(result);
             }
             catch (NegativeNumberException ex)
             {
-                Console.WriteLine(ex);
-                Console.WriteLine();
-                Console.WriteLine();
-                if (ex.InnerException != null)
-                {
-                    Console.WriteLine(ex.InnerException.Message);
-                }
-            }
-            catch { } 
-        }
-        static bool MyTryParse(string myString, out int num)
-        {
-            num = 0;
-            try
-            {          
-                num = Convert.ToInt32(myString);
-            }
-            catch(FormatException ex)
-            {
                 Console.WriteLine(ex.Message);
+            }
+        }
+
+        static bool DoubleParse(string myString, out double number) {
+            Console.WriteLine("input -> "+ myString);
+            var flag = DoubleTryParse(myString, out number);
+            Console.WriteLine("output -> "+ number);
+            return flag;
+        }
+
+        static bool DoubleTryParse(string myString, out double number)
+        {
+            number = Double.MinValue;
+            try
+            {
+                number = double.Parse(myString);
+                return true;
+            }
+            catch (FormatException)
+            {
                 return false;
             }
-            return true;
         }
-
-        //Создайте класс исключения NegativeNumberException,
-        //который будет использоваться при попытке выполнения операции,
-        //не поддерживающей отрицательные числа.
-       static void ProcessNumber(int numder)
+        
+        static double CalculateSum(double a, double b)
         {
-            if (numder < 0)
+            if (a < 0 || b < 0)
             {
-                throw new NegativeNumberException("Ваше число отрицательное", new Exception("123"));
+                throw new NegativeNumberException("The numbers cannot be negative.");
             }
-            Console.WriteLine(numder);
+            
+            return a + b;
         }
-
-        //Добавьте обработку собственного исключения, а также кода,
-        //который обрабатывает вложенное исключение(InnerException)
-        //для предоставления более детальной информации.
-
-
     }
 }

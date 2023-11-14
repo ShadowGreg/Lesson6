@@ -12,3 +12,18 @@ C:\Users\NIKnak\Desktop\C# start\Lesson6\obj\Debug\net7.0\refint\Lesson6.dll
 C:\Users\NIKnak\Desktop\C# start\Lesson6\obj\Debug\net7.0\Lesson6.pdb
 C:\Users\NIKnak\Desktop\C# start\Lesson6\obj\Debug\net7.0\Lesson6.genruntimeconfig.cache
 C:\Users\NIKnak\Desktop\C# start\Lesson6\obj\Debug\net7.0\ref\Lesson6.dll
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\Lesson6.dll
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\refint\Lesson6.dll
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\Lesson6.pdb
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\bin\Debug\net7.0\Lesson6.exe
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\bin\Debug\net7.0\Lesson6.deps.json
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\bin\Debug\net7.0\Lesson6.runtimeconfig.json
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\bin\Debug\net7.0\Lesson6.dll
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\bin\Debug\net7.0\Lesson6.pdb
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\Lesson6.csproj.AssemblyReference.cache
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\Lesson6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\Lesson6.AssemblyInfoInputs.cache
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\Lesson6.AssemblyInfo.cs
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\Lesson6.csproj.CoreCompileInputs.cache
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\Lesson6.genruntimeconfig.cache
+C:\Users\shado\OneDrive\Desktop\GB\Разработка приложения на C#\006\Seminar\CSharp-course-Lesson-and-DZ-6\obj\Debug\net7.0\ref\Lesson6.dll
