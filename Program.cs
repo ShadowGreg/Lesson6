@@ -1,79 +1,54 @@
-﻿namespace Lesson6
-{
+﻿using DZ5;
+using Lesson6.Assistant;
+
+namespace Lesson6 {
     internal class Program {
         private static double _number;
-        public static double Num { get; set; } = 0;
+        private static double Num { get; set; } = 0;
 
-        static void Main(string[] args)
-        {
-            try
-            {
-                List<string> list = new List<string>() {
-                    "1,5",
-                    "2,1",
-                    "-3",
-                    "FGSDGF",
-                    "5.6",
-                    "6,9999999",
-                }; 
-                _number = Num;
-                var flag = DoubleTryParse("4.5", out _number);
-                Console.WriteLine(flag);
-                Console.WriteLine(Num);
-                
-                double[] parsedNumbers = list.Select(
-                    num => DoubleParse(
-                        num.ToString(),
-                        out double result) ? result : 0)
-                    .ToArray();
-                
-                
-            }
-            catch (FormatException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            
-            try
-            {
-                double result = CalculateSum(5, 3);
-                Console.WriteLine(result);
-            }
-            catch (NegativeNumberException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
 
-        static bool DoubleParse(string myString, out double number) {
-            Console.WriteLine("input -> "+ myString);
-            var flag = DoubleTryParse(myString, out number);
-            Console.WriteLine("output -> "+ number);
-            return flag;
-        }
+        static void Main(string[] args) {
+            ICalc _calc = new NewCalc();
+            var convertDelegate = new ConvertDelegate(MyParse.DoubleTryParse);
+            CalculateProgram program = new CalculateProgram(convertDelegate);
+            List<string[]> lists = new() {
+                new[] { "5", "3", "+" },
+                new[] { "5", "3", "-" },
+                new[] { "5", "3", "*" },
+                new[] { "5", "3", "/" },
+                new[] { "-5", "-3", "+" },
+                new[] { "fasdfas", "asdf", "+" },
+                new[] { "34523455", "3", "+" },
+                new[] { "3", "45674567453", "-" },
+                new[] { "F", "F", "F" },
+            };
 
-        static bool DoubleTryParse(string myString, out double number)
-        {
-            number = Double.MinValue;
-            try
-            {
-                number = double.Parse(myString);
-                return true;
+            for (int i = 0; i < lists.Count(); i++) {
+                string[] list = lists[i];
+
+                try {
+                    program.Run<NewCalc>(list);
+                    Console.WriteLine();
+                }
+                catch (FormatException ex) {
+                    Console.WriteLine(ex.Message);
+                    continue;
+                }
+                catch (NegativeNumberException ex) {
+                    Console.WriteLine(ex.Message);
+                    continue;
+                }
+                catch (CalculatorExeption ex) {
+                    Console.WriteLine(ex.Message);
+                    continue;
+                }
+                catch (Exception ex) {
+                    Console.WriteLine(ex.Message);
+                    continue;
+                }
+
+                Console.WriteLine("\n \n");
             }
-            catch (FormatException)
-            {
-                return false;
-            }
-        }
-        
-        static double CalculateSum(double a, double b)
-        {
-            if (a < 0 || b < 0)
-            {
-                throw new NegativeNumberException("The numbers cannot be negative.");
-            }
-            
-            return a + b;
         }
     }
 }
