@@ -1,6 +1,4 @@
-﻿using DZ5;
-
-namespace Lesson6.Assistant;
+﻿namespace Lesson6.Assistant;
 
 internal static class MyParse {
     public static double DoubleTryParse(string myString) {
